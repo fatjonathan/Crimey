@@ -1,0 +1,156 @@
+@media only screen and (max-width: 600px) {
+    #donatello {
+        text-align: center;
+    }
+    #donatello_answer {
+        font-family: Helvetica, sans-serif;
+        margin: 40px 0 0 0;
+        padding: 0 10px 0 10px;
+        min-height: 550px; /*Screen neends to be tall enough to scroll.*/
+    }
+    #donatello_answer h1 {
+        padding: 10px 0 2px 0;
+        width: 100%;
+        font-size: 10pt;
+        color: #afafaf;
+        text-align: center;
+        font-weight: bold;
+    }
+    #donatello_answer p {
+        font-size: 9pt;
+        color: #afafaf;
+        text-align: justify;
+    }
+    #donatello_answer div.line {
+        font-size: 9pt;
+        color: #afafaf;
+    }
+    #donatello_answer div.min {
+        font-size: 11pt;
+        font-weight: bold;
+        color: white;
+        padding: 5px 0 3px 0;
+    }
+    #donatello_answer div.title {
+        display: inline-block;
+        width: 70%;
+        text-align: left;
+    }
+    #donatello_answer div.time {
+        display: inline-block;
+        width: 30%;
+        text-align: right;
+    }
+    #donatello_controls {
+        background-color: #2d2d2d;
+        border-top: 1px solid #424242;
+        position: fixed;
+        bottom: 45px;
+        height: 165px;
+        width: 100%;
+    }
+    #donatello_controls div.hoot {
+        width: 100%;
+    }
+    #donatello_controls div.hoot .boxText {
+        -webkit-appearance: none;
+        display: inline-block;
+        height: 35px;
+        width: 27%;
+        max-width: 200px;
+        margin: 7px 0 0 0;;
+        padding: 0 0 0 15px;
+        background: #3d3d3d;
+        border: 0;
+        border-bottom: 1px solid #fc4c02;
+        border-radius: 0;
+        color: #afafaf;
+    }
+    #donatello_controls input[type="radio"] {
+        display: none;
+    }
+    #donatello_controls input[type="radio"] + label {
+        color: #fc4c02;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 10pt;
+        text-align: center;
+        width: 31%;
+        max-width: 200px;
+        height: 35px;
+        vertical-align: top;
+        margin: 7px 0 0 0;
+        line-height: 35px;
+        background-color: #3d3d3d;
+    }
+    #donatello_controls input[type="radio"]:checked + label {
+        background-color: #fc4c02;
+        color: #3d3d3d;
+    }
+    #donatello_controls .boxLinks {
+        -webkit-appearance: none;
+        border-radius: 0;
+        color: #fc4c02;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 10pt;
+        padding: 10px 0 0 0;
+        text-align: center;
+        height: 35px;
+        width: 31%;
+        max-width: 200px;
+        vertical-align: middle;
+    }
+    #donatello_controls .boxLinks a {
+        text-decoration: none;
+        color: #fc4c02;
+    }
+    #chart {
+        display: none;
+        height: 350px;
+        width: 100%;
+        position: fixed;
+        bottom: 76px;
+        background-color: #2d2d2d;
+        border-top: 2px solid #fc4c02;
+        text-align: left;
+    }
+    #chart div.gap {
+        height: 27px;
+    }
+    #chart div#close {
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 10pt;
+        padding: 5px 0;
+        width: 15%;
+        background-color: #fc4c02;
+        border-radius: 0 0 0 21px;
+    }
+    #chart div.row {
+        width: 100%;
+        font-size: 10pt;
+        padding: 5px 0;
+        text-align: left;
+    }
+    #chart div.column {
+        width: 20%;
+        display: inline-block;
+        margin: 0 -4px;
+    }
+    #chart div.headings {
+        color: white;
+        font-weight: bold;
+        margin: 0 0 0 3px;
+    }
+    #chart div.data {
+        color: #afafaf;
+    }
+    #chart p {
+        text-align: justify;
+        color: #afafaf;
+        font-size: 10pt;
+        padding: 0 5px;
+    }
+}

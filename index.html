@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Crimey - Mix it up!</title>
+        <!--iphone tags-->
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <!--all other-->
+        <link rel="stylesheet" href="Stylesheets/display.css">
+        <link rel="stylesheet" href="Stylesheets/div_donatello.css">
+        <link rel="stylesheet" href="Stylesheets/div_leonardo.css">
+        <link rel="stylesheet" href="Stylesheets/div_raphael.css">
+        <link rel="stylesheet" href="Stylesheets/controls.css">
+        <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="Scripts/allcodes.js"></script>
+        <script type="text/javascript" src="Scripts/display.js"></script>
+        <script type="text/javascript" src="Scripts/div_donatello.js"></script>
+		<script type="text/javascript" src="Scripts/div_leonardo.js"></script>
+        <script type="text/javascript" src="Scripts/div_raphael.js"></script>
+        <script type="text/javascript" src="Scripts/controls.js"></script>
+        <script type="text/javascript" src="Scripts/principal.js"></script>
+        <script type="text/javascript" src="Scripts/concurrent.js"></script>
+        <script type="text/javascript" src="Scripts/attempt.js"></script>
+        <script type="text/javascript" src="Scripts/math.js"></script>
+        <script type="text/javascript" src="Scripts/strikelaw.js"></script>
+	</head>
+	<body>
+		<header>
+            <p class="crimey app">Crimey</p>
+            <nav class="website">
+                May 21, 2019
+            </nav>
+        </header>
+		<div id="app_container">
+<!--DONATELLO-->
+			<div id="donatello" class="screen">
+                <div id="donatello_controls">
+                    <form name="donatello_form">
+                        <div id="ownership" class="hoot">
+                            <input type="number" placeholder="Years" onkeyup="calculate()" onchange="calculate()" class="boxText" name="sentenceYears"/>
+                            <input type="number" placeholder="Months" onkeyup="calculate()" onchange="calculate()" class="boxText" name="sentenceMonths"/>
+                            <input type="number" placeholder="Days" onkeyup="calculate()" onchange="calculate()" class="boxText" name="sentenceDays"/>
+                        </div>
+                        <div id="wisdom" class="hoot">
+                            <input type="number" placeholder="Credits" onkeyup="calculate()" onchange="calculate()" class="boxText" id="actualCredits"/>
+                            <input type="radio" onkeyup="calculate()" onchange="calculate()" name="strike" id="no" value="no_Strike" checked>
+                            <label for="no">No Prior Strike</label>
+                            <input type="radio" onkeyup="calculate()" onchange="calculate()" name="strike" id="yes" value="has_Strike">
+                   	        <label for="yes">Strike</label>
+                        </div>
+                        <div id="learning" class="hoot">
+                            <input type="radio" onkeyup="calculate()" onchange="calculate()" name="rsv" id="f" value="felon" checked>
+                            <label for="f">Felony</label>
+                            <input type="radio" onkeyup="calculate()" onchange="calculate()" name="rsv" id="s" value="serious">
+                            <label for="s">Serious</label>
+                            <input type="radio" onkeyup="calculate()" onchange="calculate()" name="rsv" id="v" value="violent">
+                            <label for="v">Violent</label>
+                        </div>
+                        <div id="safety" class="owls">
+                            <div class="boxLinks"><a onclick="clearIt()">Reset</a></div>
+                            <div class="boxLinks" id="chart_toggle">Credit Chart</div>
+                            <div class="boxLinks">EMPTY</div>
+                        </div>
+                    </form>
+                    <div id="chart">
+                        <div class="gap">
+                            <div id="close">Close</div>
+                        </div>
+                        <div class="row headings">
+                            <div class="column"></div>
+                            <div class="column">Pre-PJ</div>
+                            <div class="column">Post-PJ</div>
+                            <div class="column">Prop 57</div>
+                            <div class="column">Fire Camp</div>
+                        </div>
+                        <div class="row">
+                            <div class="column headings">Felony</div>
+                            <div class="column data">50%</div>
+                            <div class="column data">50%</div>
+                            <div class="column data">66%</div>
+                            <div class="column data">66%</div>
+                        </div>
+                        <div class="row">
+                            <div class="column headings">Strike Prior</div>
+                            <div class="column data">50%</div>
+                            <div class="column data">20%</div>
+                            <div class="column data">33%</div>
+                            <div class="column data">66%</div>
+                        </div>
+                        <div class="row">
+                            <div class="column headings">Serious</div>
+                            <div class="column data">50%</div>
+                            <div class="column data">50%</div>
+                            <div class="column data">66%</div>
+                            <div class="column data">66%</div>
+                        </div>
+                        <div class="row">
+                            <div class="column headings">Violent</div>
+                            <div class="column data">15%</div>
+                            <div class="column data">15%</div>
+                            <div class="column data">20%</div>
+                            <div class="column data">50%</div>
+                        </div>
+                        <p><b>Prop 57</b>: Inmates who are not condemned or sentenced to life without the possibility of parole may qualify for amplified good conduct credits pursuant to Article I, &sect 32 of the California Constitution, which authorized the Department of Corrections and Rehabilitation to award credits for good behavior beyond what is authorized by statute. Good conduct credits are awarded to eligible inmates who comply with all rules within a prison and perform the duties as assigned on a regular basis.  Eligibility is determined by CDCR and is subject to change without notice.</p>
+                    </div>
+                </div>
+                <div id="donatello_answer"></div>
+            </div>
+<!--LEONARDO-->
+			<div id="leonardo" class="screen">
+				<div id="leonardo_controls">
+					<form name="leonardo_form">
+						<input type="number" placeholder="Section Number" name="section" onchange="zaszim()" onkeyup="zaszim()"/>
+					</form>
+				</div>
+                <div id="leonardo_answer"></div>
+			</div>
+<!--RAPHAEL-->
+			<div id="raphael" class="screen">
+                <input type="hidden" value="0" id="countNumber"/>
+                <div id="raphael_answer">
+                    <div class="cell gets">
+                        <div class="gets_label">Served at:</div>
+                        <div class="gets_answer" id="gets_jorp"></div>
+                    </div>
+                    <div class="cell" id="raphael_total"></div>
+                    <div class="cell gets">
+                        <div class="gets_label">Strikes:</div>
+                        <div class="gets_answer" id="gets_strikes"></div>
+                    </div>
+                </div>
+                <div id="raphael_list">
+                    <form name="counts" id="counts" onchange="addItUp()"></form>
+                </div>
+                <div id="strikes">
+                    <div id="strikes_title">
+                        <p>Alnternative Sentencing Schemes (Strikes)</p>
+                    </div>
+                    <div id="strikes_info">
+                        <form name="strikes_form" onchange="strikeLawUpdate()">
+                            <input type="radio" name="scheme" id="strikes_none" value="none" checked>
+                            <label for="strikes_none">No prior serious/violet convictions.</label>
+                            <input type="radio" name="scheme" id="strikes_one" value="one_strikelaw">
+                            <label for="strikes_one">One serious/violent conviction.</label>
+                            <input type="radio" name="scheme" id="strikes_three" value="three_strikelaw">
+                            <label for="strikes_three">Two or more serious/violent convictions.</label>
+                            <input type="radio" name="scheme" id="strikes_excluded" value="excluded_strikelaw">
+                            <label for="strikes_excluded">Excluded with two or more serious/violent convictions.</label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+<!--MICHELANGELO-->
+            <div id="navigation">
+                <input type="radio" name="controls" class="controls" id="d" value="donatello">
+                <label for="d">Credits</label>
+                <input type="radio" name="controls" class="controls" id="l" value="leonardo" checked>
+                <label for="l">Codes</label>
+                <input type="radio" name="controls" class="controls" id="r" value="raphael">
+                <label for="r" id="chargeCount">Charges</label>
+            </div>
+		</div>
+	</body>
+</html>
