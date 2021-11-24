@@ -1,4 +1,4 @@
-//Navigates between screen when some are hidden.
+//This is set up to have two different widths.
 $(document).ready(function() {
     //Used when opened.
     var reveal = $(".controls:checked").val();
@@ -6,7 +6,8 @@ $(document).ready(function() {
         $(".screen").hide();
         $("#"+reveal).show();
     } else {
-        $(".screen").show();
+        $(".screen").hide();
+        $("#"+reveal).show();
     }
 });
 $(window).resize(function() {
@@ -16,7 +17,8 @@ $(window).resize(function() {
         $(".screen").hide();
         $("#"+reveal).show();
     } else {
-        $(".screen").show();
+        $(".screen").hide();
+        $("#"+reveal).show();
     }
 });
 $(document).change(function() {
